@@ -1,0 +1,38 @@
+==============================
+         BUG REPORT
+==============================
+
+Title: Giao diện Google Dịch không đổi sang Tiếng Việt sau khi chọn ngôn ngữ
+
+1. Mô tả ngắn gọn:
+Sau khi thay đổi ngôn ngữ giao diện sang "Tiếng Việt" trên Google Dịch, giao diện vẫn giữ nguyên ngôn ngữ gốc (Tiếng Anh). Không có thông báo lỗi, nhưng không thấy thay đổi.
+
+2. Môi trường kiểm thử:
+- Hệ điều hành: Windows 10
+- Trình duyệt: Google Chrome v124.0
+- ChromeDriver: v124.0
+- Python: 3.11
+- Selenium: 4.15.2
+
+3. Bước tái hiện lỗi:
+1. Truy cập trang: https://translate.google.com
+2. Nhấn vào biểu tượng "Settings" (góc dưới cùng bên phải)
+3. Chọn "Change language"
+4. Chọn "Tiếng Việt" từ danh sách
+5. Quan sát giao diện sau khi chọn
+
+4. Kết quả thực tế:
+- Giao diện không chuyển sang tiếng Việt.
+- Các nút như "Settings" vẫn còn hiển thị bằng tiếng Anh.
+
+5. Kết quả mong đợi:
+- Giao diện thay đổi sang tiếng Việt hoàn toàn sau khi chọn.
+
+6. Mức độ nghiêm trọng: Medium
+(Lỗi không làm gián đoạn chức năng chính, nhưng ảnh hưởng đến trải nghiệm người dùng không nói tiếng Anh.)
+
+7. Ghi chú bổ sung:
+- Không thấy lỗi JavaScript trong DevTools Console.
+- Không có hành vi reload trang sau khi chọn ngôn ngữ mới.
+
+==============================
